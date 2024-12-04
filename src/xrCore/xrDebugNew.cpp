@@ -3,7 +3,7 @@
 
 #include "xrdebug.h"
 
-#include "dxerr9.h"
+#include "dxerr.h"
 
 #pragma warning(push)
 #pragma warning(disable:4995)
@@ -29,7 +29,7 @@ extern bool shared_str_initialized;
 
 #ifndef _M_AMD64
 #	ifndef __BORLANDC__
-#		pragma comment(lib,"dxerr9.lib")
+#		pragma comment(lib,"DxErr.lib")
 #	endif
 #endif
 
@@ -283,7 +283,7 @@ LPCSTR xrDebug::error2string	(long code)
 
 #ifdef _M_AMD64
 #else
-	result				= DXGetErrorDescription9	(code);
+	result				= DXGetErrorDescription	(code);
 #endif
 	if (nullptr==result) 
 	{

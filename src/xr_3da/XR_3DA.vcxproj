@@ -108,44 +108,44 @@
     <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(SolutionDir)sdk\DPlay;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\Xiph\Include;$(SolutionDir)sdk\dxsdk_mar2009\Include;$(SolutionDir)src\xrLua\src;$(SolutionDir)sdk\luabind\luabind;$(SolutionDir)sdk\boost_1_30_0;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)sdk\Xiph\Libs;$(SolutionDir)lib;$(SolutionDir)sdk\dxsdk_mar2009\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)sdk\DPlay;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\Xiph\Include;$(SolutionDir)sdk\dxsdk_jun2010\Include;$(SolutionDir)src\xrLua\src;$(SolutionDir)sdk\luabind\luabind;$(SolutionDir)sdk\boost_1_30_0;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)sdk\Xiph\Libs;$(SolutionDir)lib;$(SolutionDir)sdk\dxsdk_jun2010\Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Mixed|Win32'">
     <OutDir>$(SolutionDir)bin\</OutDir>
     <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(SolutionDir)sdk\DPlay;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\Xiph\Include;$(SolutionDir)sdk\dxsdk_mar2009\Include;$(SolutionDir)src\xrLua\src;$(SolutionDir)sdk\luabind\luabind;$(SolutionDir)sdk\boost_1_30_0;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)sdk\Xiph\Libs;$(SolutionDir)lib;$(SolutionDir)sdk\dxsdk_mar2009\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)sdk\DPlay;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\Xiph\Include;$(SolutionDir)sdk\dxsdk_jun2010\Include;$(SolutionDir)src\xrLua\src;$(SolutionDir)sdk\luabind\luabind;$(SolutionDir)sdk\boost_1_30_0;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)sdk\Xiph\Libs;$(SolutionDir)lib;$(SolutionDir)sdk\dxsdk_jun2010\Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)bin\</OutDir>
     <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(SolutionDir)sdk\DPlay;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\Xiph\Include;$(SolutionDir)sdk\dxsdk_mar2009\Include;$(SolutionDir)src\xrLua\src;$(SolutionDir)sdk\luabind\luabind;$(SolutionDir)sdk\boost_1_30_0;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)sdk\Xiph\Libs;$(SolutionDir)lib;$(SolutionDir)sdk\dxsdk_mar2009\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)sdk\DPlay;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\Xiph\Include;$(SolutionDir)sdk\dxsdk_jun2010\Include;$(SolutionDir)src\xrLua\src;$(SolutionDir)sdk\luabind\luabind;$(SolutionDir)sdk\boost_1_30_0;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)sdk\Xiph\Libs;$(SolutionDir)lib;$(SolutionDir)sdk\dxsdk_jun2010\Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Dedicated|Win32'">
     <OutDir>$(SolutionDir)bin\dedicated\</OutDir>
     <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(SolutionDir)sdk\DPlay;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\Xiph\Include;$(SolutionDir)sdk\dxsdk_mar2009\Include;$(SolutionDir)src\xrLua\src;$(SolutionDir)sdk\luabind\luabind;$(SolutionDir)sdk\boost_1_30_0;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)sdk\Xiph\Libs;$(SolutionDir)lib;$(SolutionDir)sdk\dxsdk_mar2009\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)sdk\DPlay;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\Xiph\Include;$(SolutionDir)sdk\dxsdk_jun2010\Include;$(SolutionDir)src\xrLua\src;$(SolutionDir)sdk\luabind\luabind;$(SolutionDir)sdk\boost_1_30_0;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)sdk\Xiph\Libs;$(SolutionDir)lib;$(SolutionDir)sdk\dxsdk_jun2010\Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Mixed_Dedicated|Win32'">
     <OutDir>$(SolutionDir)bin\dedicated\</OutDir>
     <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(SolutionDir)sdk\DPlay;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\Xiph\Include;$(SolutionDir)sdk\dxsdk_mar2009\Include;$(SolutionDir)src\xrLua\src;$(SolutionDir)sdk\luabind\luabind;$(SolutionDir)sdk\boost_1_30_0;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)sdk\Xiph\Libs;$(SolutionDir)lib;$(SolutionDir)sdk\dxsdk_mar2009\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)sdk\DPlay;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\Xiph\Include;$(SolutionDir)sdk\dxsdk_jun2010\Include;$(SolutionDir)src\xrLua\src;$(SolutionDir)sdk\luabind\luabind;$(SolutionDir)sdk\boost_1_30_0;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)sdk\Xiph\Libs;$(SolutionDir)lib;$(SolutionDir)sdk\dxsdk_jun2010\Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Dedicated|Win32'">
     <OutDir>$(SolutionDir)bin\dedicated\</OutDir>
     <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(SolutionDir)sdk\DPlay;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\Xiph\Include;$(SolutionDir)sdk\dxsdk_mar2009\Include;$(SolutionDir)src\xrLua\src;$(SolutionDir)sdk\luabind\luabind;$(SolutionDir)sdk\boost_1_30_0;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)sdk\Xiph\Libs;$(SolutionDir)lib;$(SolutionDir)sdk\dxsdk_mar2009\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)sdk\DPlay;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\Xiph\Include;$(SolutionDir)sdk\dxsdk_jun2010\Include;$(SolutionDir)src\xrLua\src;$(SolutionDir)sdk\luabind\luabind;$(SolutionDir)sdk\boost_1_30_0;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)sdk\Xiph\Libs;$(SolutionDir)lib;$(SolutionDir)sdk\dxsdk_jun2010\Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>

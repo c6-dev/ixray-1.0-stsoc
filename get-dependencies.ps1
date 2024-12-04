@@ -7,12 +7,12 @@ ForEach ($line in $globalPaths) {
     }
 }
 
-# Getting DirectX SDK March 2009 from archive
-If (!(Test-Path "sdk\dxsdk_mar2009")) {
-    Invoke-WebRequest -Uri "https://github.com/ixray-team/ixray-1.0-stsoc/releases/download/r0.1/sdk-directxsdk-mar2009.zip" `
-                      -OutFile "directxsdk-mar2009.zip"
+# Getting DirectX SDK June 2010 from archive
+If (!(Test-Path "sdk\dxsdk_jun2010")) {
+    Invoke-WebRequest -Uri "https://github.com/c6-dev/ixray-1.0-stsoc/releases/download/util/directxsdk-jun2010.zip" `
+                      -OutFile "directxsdk-jun2010.zip"
     Start-Process -FilePath $path `
-                  -ArgumentList "x directxsdk-mar2009.zip" `
+                  -ArgumentList "x directxsdk-jun2010.zip -osdk\dxsdk_jun2010" `
                   -NoNewWindow -Wait
-    Remove-Item "directxsdk-mar2009.zip"
+    Remove-Item "directxsdk-jun2010.zip"
 }
