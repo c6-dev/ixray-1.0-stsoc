@@ -109,7 +109,7 @@ void CBaseMonster::HitEntity(const CEntity *pEntity, float fDamage, float impuls
 		if (pEntityNC == Actor()) {
 			START_PROFILE("BaseMonster/Animation/HitEntity");
 			SDrawStaticStruct* s = HUD().GetUI()->UIGame()->AddCustomStatic("monster_claws", false);
-			s->m_endTime = Device.fTimeGlobal+3.0f;// 3sec
+			s->m_endTime = Device.fTimeGlobal+0.5f;// 3sec
 			
 			float h1,p1;
 			Device.vCameraDirection.getHP	(h1,p1);
