@@ -105,7 +105,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)bin\</OutDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)</OutDir>
     <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
     <ExtensionsToDeleteOnClean>*.idb%3b*.obj%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.bat%3b$(TargetPath)</ExtensionsToDeleteOnClean>
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
@@ -114,21 +114,21 @@
     <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Mixed|Win32'">
-    <OutDir>$(SolutionDir)bin\</OutDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)</OutDir>
     <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(SolutionDir)sdk\DPlay;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\loki;$(SolutionDir)src\xrLua\src;$(SolutionDir)sdk\luabind\luabind;$(SolutionDir)sdk\boost_1_30_0;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)bin\</OutDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)</OutDir>
     <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(SolutionDir)sdk\DPlay;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\loki;$(SolutionDir)src\xrLua\src;$(SolutionDir)sdk\luabind\luabind;$(SolutionDir)sdk\boost_1_30_0;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Priquel|Win32'">
-    <OutDir>$(SolutionDir)bin\</OutDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)</OutDir>
     <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
     <ExtensionsToDeleteOnClean>*.idb%3b*.obj%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.bat%3b$(TargetPath)</ExtensionsToDeleteOnClean>
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
@@ -137,14 +137,14 @@
     <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Mixed_Priquel|Win32'">
-    <OutDir>$(SolutionDir)bin\</OutDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)</OutDir>
     <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(SolutionDir)sdk\DPlay;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\loki;$(SolutionDir)src\xrLua\src;$(SolutionDir)sdk\luabind\luabind;$(SolutionDir)sdk\boost_1_30_0;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Priquel|Win32'">
-    <OutDir>$(SolutionDir)bin\</OutDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)</OutDir>
     <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(SolutionDir)sdk\DPlay;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\loki;$(SolutionDir)src\xrLua\src;$(SolutionDir)sdk\luabind\luabind;$(SolutionDir)sdk\boost_1_30_0;$(IncludePath)</IncludePath>
@@ -195,9 +195,8 @@
       <ImportLibrary>$(SolutionDir)lib\$(ProjectName).lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>copy "C:\Users\ykzmd\source\repos\ixray-1.0-stsoc\bin\xrGame.dll" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"
-copy "C:\Users\ykzmd\source\repos\ixray-1.0-stsoc\bin\xrGame.pdb" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"
-</Command>
+      <Command>copy "$(SolutionDir)bin\$(Configuration)\xrGame.dll" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"
+copy "$(SolutionDir)bin\$(Configuration)\xrGame.dll" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Mixed|Win32'">
@@ -245,9 +244,8 @@ copy "C:\Users\ykzmd\source\repos\ixray-1.0-stsoc\bin\xrGame.pdb" "C:\Games\GOG\
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>copy "C:\Users\ykzmd\source\repos\ixray-1.0-stsoc\bin\xrGame.dll" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"
-copy "C:\Users\ykzmd\source\repos\ixray-1.0-stsoc\bin\xrGame.pdb" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"
-</Command>
+      <Command>copy "$(SolutionDir)bin\$(Configuration)\xrGame.dll" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"
+copy "$(SolutionDir)bin\$(Configuration)\xrGame.dll" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -302,9 +300,8 @@ copy "C:\Users\ykzmd\source\repos\ixray-1.0-stsoc\bin\xrGame.pdb" "C:\Games\GOG\
       <ImportLibrary>$(SolutionDir)lib\$(ProjectName).lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>copy "C:\Users\ykzmd\source\repos\ixray-1.0-stsoc\bin\xrGame.dll" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"
-copy "C:\Users\ykzmd\source\repos\ixray-1.0-stsoc\bin\xrGame.pdb" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"
-</Command>
+      <Command>copy "$(SolutionDir)bin\$(Configuration)\xrGame.dll" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"
+copy "$(SolutionDir)bin\$(Configuration)\xrGame.dll" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Priquel|Win32'">
@@ -352,9 +349,8 @@ copy "C:\Users\ykzmd\source\repos\ixray-1.0-stsoc\bin\xrGame.pdb" "C:\Games\GOG\
       <ImportLibrary>$(SolutionDir)lib\$(ProjectName).lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>copy "C:\Users\ykzmd\source\repos\ixray-1.0-stsoc\bin\xrGame.dll" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"
-copy "C:\Users\ykzmd\source\repos\ixray-1.0-stsoc\bin\xrGame.pdb" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"
-</Command>
+      <Command>copy "$(SolutionDir)bin\$(Configuration)\xrGame.dll" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"
+copy "$(SolutionDir)bin\$(Configuration)\xrGame.dll" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Mixed_Priquel|Win32'">
@@ -402,9 +398,8 @@ copy "C:\Users\ykzmd\source\repos\ixray-1.0-stsoc\bin\xrGame.pdb" "C:\Games\GOG\
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>copy "C:\Users\ykzmd\source\repos\ixray-1.0-stsoc\bin\xrGame.dll" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"
-copy "C:\Users\ykzmd\source\repos\ixray-1.0-stsoc\bin\xrGame.pdb" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"
-</Command>
+      <Command>copy "$(SolutionDir)bin\$(Configuration)\xrGame.dll" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"
+copy "$(SolutionDir)bin\$(Configuration)\xrGame.dll" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Priquel|Win32'">
@@ -459,9 +454,8 @@ copy "C:\Users\ykzmd\source\repos\ixray-1.0-stsoc\bin\xrGame.pdb" "C:\Games\GOG\
       <ImportLibrary>$(SolutionDir)lib\$(ProjectName).lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>copy "C:\Users\ykzmd\source\repos\ixray-1.0-stsoc\bin\xrGame.dll" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"
-copy "C:\Users\ykzmd\source\repos\ixray-1.0-stsoc\bin\xrGame.pdb" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"
-</Command>
+      <Command>copy "$(SolutionDir)bin\$(Configuration)\xrGame.dll" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"
+copy "$(SolutionDir)bin\$(Configuration)\xrGame.dll" "C:\Games\GOG\Games\S.T.A.L.K.E.R. Shadow of Chernobyl\bin"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

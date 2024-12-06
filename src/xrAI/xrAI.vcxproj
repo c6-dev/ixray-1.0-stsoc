@@ -100,42 +100,42 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)bin\</OutDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)</OutDir>
     <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(SolutionDir)sdk\dxsdk_mar2009\Include;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\loki;$(SolutionDir)sdk\MagicSoftware\FreeMagic\Include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)sdk\dxsdk_mar2009\Lib\x86;$(SolutionDir)lib;$(SolutionDir)sdk\MagicSoftware\FreeMagic\Library\ReleaseDLL;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)bin\</OutDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)</OutDir>
     <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(SolutionDir)sdk\dxsdk_mar2009\Include;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\loki;$(SolutionDir)sdk\MagicSoftware\FreeMagic\Include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)sdk\dxsdk_mar2009\Lib\x86;$(SolutionDir)lib;$(SolutionDir)sdk\MagicSoftware\FreeMagic\Library\ReleaseDLL;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Mixed|Win32'">
-    <OutDir>$(SolutionDir)bin\</OutDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)</OutDir>
     <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(SolutionDir)sdk\dxsdk_mar2009\Include;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\loki;$(SolutionDir)sdk\MagicSoftware\FreeMagic\Include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)sdk\dxsdk_mar2009\Lib\x86;$(SolutionDir)lib;$(SolutionDir)sdk\MagicSoftware\FreeMagic\Library\ReleaseDLL;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Mixed_Priquel|Win32'">
-    <OutDir>$(SolutionDir)bin\</OutDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)</OutDir>
     <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(SolutionDir)sdk\dxsdk_mar2009\Include;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\loki;$(SolutionDir)sdk\MagicSoftware\FreeMagic\Include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)sdk\dxsdk_mar2009\Lib\x86;$(SolutionDir)lib;$(SolutionDir)sdk\MagicSoftware\FreeMagic\Library\ReleaseDLL;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Priquel|Win32'">
-    <OutDir>$(SolutionDir)bin\</OutDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)</OutDir>
     <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(SolutionDir)sdk\dxsdk_mar2009\Include;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\loki;$(SolutionDir)sdk\MagicSoftware\FreeMagic\Include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)sdk\dxsdk_mar2009\Lib\x86;$(SolutionDir)lib;$(SolutionDir)sdk\MagicSoftware\FreeMagic\Library\ReleaseDLL;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Priquel|Win32'">
-    <OutDir>$(SolutionDir)bin\</OutDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)</OutDir>
     <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(SolutionDir)sdk\dxsdk_mar2009\Include;$(SolutionDir)src\xrCore;$(SolutionDir)sdk\loki;$(SolutionDir)sdk\MagicSoftware\FreeMagic\Include;$(IncludePath)</IncludePath>
