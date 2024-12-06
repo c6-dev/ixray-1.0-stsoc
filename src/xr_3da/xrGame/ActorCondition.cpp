@@ -235,11 +235,16 @@ void CActorCondition::ConditionJump(float weight)
 	m_fPower			-=	HitPowerEffect(power);
 }
 void CActorCondition::ConditionWalk(float weight, bool accel, bool sprint)
-{	
-	float power			=	m_fWalkPower;
-	power				+=	m_fWalkWeightPower*weight*(weight>1.f?m_fOverweightWalkK:1.f);
-	power				*=	m_fDeltaTime*(accel?(sprint?m_fSprintK:m_fAccelK):1.f);
-	m_fPower			-=	HitPowerEffect(power);
+{
+	if (!sprint && weight <= 1.f) {
+		ConditionStand(weight);
+	}
+	else {
+		float power = m_fWalkPower;
+		power += m_fWalkWeightPower * weight * (weight > 1.f ? m_fOverweightWalkK : 1.f);
+		power *= m_fDeltaTime * (accel ? (sprint ? m_fSprintK : m_fAccelK) : 1.f);
+		m_fPower -= HitPowerEffect(power);
+	}
 }
 
 void CActorCondition::ConditionStand(float weight)
