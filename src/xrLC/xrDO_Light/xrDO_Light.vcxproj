@@ -461,12 +461,12 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\..\..\packages\ImeSense.Packages.FreeImage.WinMerge.3.18.0.20230819\build\native\ImeSense.Packages.FreeImage.WinMerge.targets" Condition="Exists('..\..\..\packages\ImeSense.Packages.FreeImage.WinMerge.3.18.0.20230819\build\native\ImeSense.Packages.FreeImage.WinMerge.targets')" />
+    <Import Project="..\..\..\packages\ImeSense.Packages.FreeImage.WinMerge.2023.8.19-open\build\native\ImeSense.Packages.FreeImage.WinMerge.targets" Condition="Exists('..\..\..\packages\ImeSense.Packages.FreeImage.WinMerge.2023.8.19-open\build\native\ImeSense.Packages.FreeImage.WinMerge.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
-      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\..\packages\ImeSense.Packages.FreeImage.WinMerge.3.18.0.20230819\build\native\ImeSense.Packages.FreeImage.WinMerge.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\ImeSense.Packages.FreeImage.WinMerge.3.18.0.20230819\build\native\ImeSense.Packages.FreeImage.WinMerge.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\ImeSense.Packages.FreeImage.WinMerge.2023.8.19-open\build\native\ImeSense.Packages.FreeImage.WinMerge.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\ImeSense.Packages.FreeImage.WinMerge.2023.8.19-open\build\native\ImeSense.Packages.FreeImage.WinMerge.targets'))" />
   </Target>
 </Project>
