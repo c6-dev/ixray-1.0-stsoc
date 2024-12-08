@@ -92,7 +92,6 @@ struct _SoundProcessor	: public pureFrame
 //////////////////////////////////////////////////////////////////////////
 // global variables
 ENGINE_API	CApplication*	pApp			= NULL;
-static		HWND			logoWindow		= NULL;
 
 			int				doLauncher		();
 			void			doBenchmark		(LPCSTR name);
@@ -243,9 +242,6 @@ void Startup					( )
 	g_SpatialSpace				= xr_new<ISpatial_DB>	();
 	g_SpatialSpacePhysic		= xr_new<ISpatial_DB>	();
 	
-	// Destroy LOGO
-	DestroyWindow				(logoWindow);
-	logoWindow					= NULL;
 
 	// Main cycle
 	CheckCopyProtection			( );
@@ -594,19 +590,7 @@ int APIENTRY WinMain_impl(HINSTANCE hInstance,
 	g_dedicated_server			= true;
 #endif // DEDICATED_SERVER
 
-	SetThreadAffinityMask		(GetCurrentThread(),1);
-
-	// Title window
-	logoWindow					= CreateDialog(GetModuleHandle(NULL),	MAKEINTRESOURCE(IDD_STARTUP), 0, logDlgProc );
-	SetWindowPos				(
-		logoWindow,
-		HWND_NOTOPMOST,
-		0,
-		0,
-		0,
-		0,
-		SWP_NOMOVE | SWP_NOSIZE | SWP_SHOWWINDOW
-	);
+//	SetThreadAffinityMask		(GetCurrentThread(),1);
 
 	// AVI
 	g_bIntroFinished			= TRUE;

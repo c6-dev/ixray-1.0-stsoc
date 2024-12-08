@@ -777,7 +777,6 @@ copy "$(SolutionDir)bin\$(Configuration)\XR_3DA.pdb" "C:\Games\GOG\Games\S.T.A.L
     <Image Include="stalker.ico">
       <DeploymentContent>true</DeploymentContent>
     </Image>
-    <Image Include="ui_splash3.bmp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="ClientServer.txt" />

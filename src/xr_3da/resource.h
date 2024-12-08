@@ -3,7 +3,6 @@
 // Used by resource.rc
 //
 #define IDDEBUG                         3
-#define IDD_STARTUP                     106
 #define IDI_ICON1                       111
 #define IDB_BITMAP2                     116
 #define IDC_LIST                        1000
