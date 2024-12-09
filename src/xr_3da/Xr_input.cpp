@@ -52,7 +52,7 @@ CInput::CInput						( BOOL bExclusive, int deviceForInit)
 	if (deviceForInit & keyboard_device_key)
 		CHK_DX(CreateInputDevice(
 		&pKeyboard, 	GUID_SysKeyboard, 	&c_dfDIKeyboard,
-		((bExclusive)?DISCL_EXCLUSIVE:DISCL_NONEXCLUSIVE) | DISCL_FOREGROUND,
+		DISCL_NONEXCLUSIVE | DISCL_FOREGROUND,
 		KEYBOARDBUFFERSIZE ));
 
 	// MOUSE
